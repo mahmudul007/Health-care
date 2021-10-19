@@ -1,0 +1,46 @@
+[
+    {
+        "_id": "616d9ee677497344a6e30e1e",
+        "picture": "https://i.ibb.co/6XnRQBs/serv1.jpg",
+        "name": "Teeth Whitening",
+        "description": "Whitening is among the most popular dental procedures because it can greatly improve how your teeth look.",
+        "available": "everyday",
+        "email": "georgetterutledge@neteria.com",
+        "phone": "+1 (833) 463-2425"
+    },
+    {
+        "_id": "616d9ee6994479106f4fd91c",
+        "picture": "https://i.ibb.co/KLy7LMY/serv2.jpg",
+        "description": "Teeth cleaning is part of oral hygiene and involves the removal of dental plaque from teeth (dental caries).",
+        "name": "Teeth Cleaning",
+        "available": "everyday",
+        "email": "mamiecasey@venoflex.com",
+        "phone": "+1 (829) 448-2353"
+    },
+    {
+        "_id": "616d9ee663b95e97dede315e",
+        "picture": "https://i.ibb.co/0DRTbnm/serv3.jpg",
+        "description": "Orthodontics is the branch of dentistry that corrects teeth and jaws that are positioned improperly.",
+        "name": "Quality Brackets",
+        "email": "shawnaclay@kiosk.com",
+        "phone": "+1 (821) 506-2997"
+    },
+    {
+        "_id": "616d9ee66e5b785e7fd123a0",
+        "picture": "https://i.ibb.co/j4ZwTw1/serve4.jpg",
+        "description": "Dental anesthesia is a field of anesthesia that includes not only local but sedation and general anesthesia.",
+        "name": "Certified Dentists",
+        "available": "everyday",
+        "email": "monicasanders@eplosion.com",
+        "phone": "+1 (895) 576-3467"
+    },
+    {
+        "_id": "616d9ee66e5b785e7fd123a12",
+        "picture": "https://i.ibb.co/k9tW8rr/Serve5.jpg",
+        "description": "We give 24/7 ambulance service",
+        "name": "Ambulance",
+        "available": "everyday",
+        "email": "monicasanders@eplosion.com",
+        "phone": "+1 (895) 576-3467"
+    }
+]

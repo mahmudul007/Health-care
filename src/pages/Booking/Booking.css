@@ -1,0 +1,9 @@
+.form {
+    max-width: 300px;
+    margin: auto;
+
+}
+
+.back {
+    background-image: url("../../images/slider/img1.jpg");
+}

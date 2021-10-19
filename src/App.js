@@ -1,23 +1,75 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Uppernav from './pages/Header/Uppernav';
+import Header from './pages/Header/Header';
+
+
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Mainfile from './pages/Home/Main/Mainfile';
+import Services from './pages/Home/Services/Services';
+import About from './pages/AboutUs/About';
+import Notfound from './pages/Notfound/Notfound';
+import Doctors from './pages/Home/Doctors/Doctors';
+import Login from './pages/Home/Profile/Login';
+import AuthProvider from './context/AuthProvider';
+import Footer from './pages/Footer/Footer';
+import Booking from './pages/Booking/Booking';
+import Private from './PrivateRoute/Private';
+import Care from './pages/Home/Patientcare/Care';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AuthProvider>
+        <BrowserRouter>
+          <Uppernav></Uppernav>
+          <Header></Header>
+
+
+          <Switch>
+            <Route exact path="/">
+              <Mainfile></Mainfile>
+
+            </Route>
+            <Route path="/home">
+              <Mainfile></Mainfile>
+              <Footer></Footer>
+
+            </Route>
+
+            <Route path="/service">
+              <Services></Services>
+            </Route>
+
+
+            <Route path="/about">
+              <About></About>
+            </Route>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+            <Route path="/doctor">
+              <Doctors></Doctors>
+
+
+            </Route>
+            <Private path="/booking">
+              <Booking></Booking>
+            </Private>
+            <Private path="/care">
+              <Care></Care>
+            </Private>
+
+            <Route path="*">
+              <Notfound></Notfound>
+            </Route>
+          </Switch>
+
+
+
+        </BrowserRouter>
+      </AuthProvider>
     </div>
   );
 }
