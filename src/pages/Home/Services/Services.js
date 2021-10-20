@@ -10,6 +10,7 @@ const Services = () => {
             .then(data => data.json())
             .then(res => setServices(res))
 
+
     }, [])
     return (
         <div >
@@ -17,7 +18,7 @@ const Services = () => {
             <div className="row row-cols-1 row-cols-md-3 g-4 lg-4">
                 {
                     services.map(serve => <Service
-                        key={serve.id}
+                        key={serve._id}
                         serve={serve}
                     >
 

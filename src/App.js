@@ -16,6 +16,7 @@ import Footer from './pages/Footer/Footer';
 import Booking from './pages/Booking/Booking';
 import Private from './PrivateRoute/Private';
 import Care from './pages/Home/Patientcare/Care';
+import Singleservice from './pages/Home/Services/Singleservice';
 
 
 function App() {
@@ -60,6 +61,10 @@ function App() {
             <Private path="/care">
               <Care></Care>
             </Private>
+            <Route exact path="/single/:id">
+              <Singleservice>
+              </Singleservice>
+            </Route>
 
             <Route path="*">
               <Notfound></Notfound>
